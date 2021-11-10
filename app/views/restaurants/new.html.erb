@@ -1,0 +1,13 @@
+ <div class="ml-3 text-center mt-3">
+  <%= form_for(@restaurant) do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: "mb-3"  %><br>
+    <%= f.label :address %><br>
+    <%= f.text_field :address, class: "mb-3"  %><br>
+    <%= f.label :category %><br>
+    <%= f.text_field :category, class: "mb-3"  %><br>
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number, class: "mb-4" %><br>
+    <%= f.submit %>
+  <% end %>
+</div>

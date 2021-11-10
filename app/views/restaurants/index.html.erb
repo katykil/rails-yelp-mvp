@@ -1,0 +1,9 @@
+<h1 class="ml-3 mt-3">Restaurant List</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, "restaurants/#{restaurant.id}" %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Create Restaurant', new_restaurant_path, class: "btn btn-primary ml-3" %>
